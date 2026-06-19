@@ -1,0 +1,16 @@
+package com.ayushTutorial.SpringBoot_Tutorials.Day2_Dependency_Injection.SpringBoot_Example;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+@SpringBootApplication
+public class DemoApplication {
+
+	public static void main(String[] args) {
+		ApplicationContext context = SpringApplication.run(DemoApplication.class, args);
+
+		Car car = context.getBean(Car.class);
+		car.drive();
+	}
+}
