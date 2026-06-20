@@ -12,5 +12,6 @@ public class DemoApplication {
 
 		Car car = context.getBean(Car.class);
 		car.drive();
+
 	}
 }
